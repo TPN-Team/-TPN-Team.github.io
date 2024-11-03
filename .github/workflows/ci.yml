@@ -1,5 +1,12 @@
 name: Beautiful Jekyll CI
 on: [push, pull_request]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  actions: read
+
 jobs:
   build:
     name: Build Jekyll
